@@ -67,7 +67,7 @@ function louis_customizer( $wp_customize )
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'esc_url_raw',
+		'sanitize_callback' => 'sanitize_boolean_select_box',
 	) );
 
 	$wp_customize->add_control( 'louis_display_hero_banner', array(
@@ -210,7 +210,7 @@ function louis_customizer( $wp_customize )
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'esc_url_raw',
+		'sanitize_callback' => 'sanitize_boolean_select_box',
 	) );
 
 	$wp_customize->add_control( 'louis_hero_overlay_enabled', array(
@@ -263,7 +263,7 @@ function louis_customizer( $wp_customize )
 		'type'              => 'theme_mod',
 		'capability'        => 'edit_theme_options',
 		'transport'         => 'postMessage',
-		'sanitize_callback' => 'esc_url_raw',
+		'sanitize_callback' => 'sanitize_boolean_select_box',
 	) );
 
 	$wp_customize->add_control( 'louis_header_social_show', array(

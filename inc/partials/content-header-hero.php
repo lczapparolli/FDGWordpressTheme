@@ -11,7 +11,7 @@ $louis_display_hero_button2 = esc_attr( get_theme_mod( 'louis_hero_button2_show'
 
 	?>
 
-	<h2><?php echo esc_html( get_theme_mod( 'louis_hero_title' ) ); ?></h2>
+	<h1><?php echo esc_html( get_theme_mod( 'louis_hero_title' ) ); ?></h1>
 
 	<?php
 

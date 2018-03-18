@@ -218,7 +218,31 @@ function louis_scripts()
 
 add_action( 'wp_enqueue_scripts', 'louis_scripts' );
 
+function sanitize_boolean_select_box($value)
+{
+	$value = sanitize_text_field($value);
+	$valid_values = array('yes', 'no');
+	
+	if (!in_array($value, $valid_values))
+	{
+		wp_die('Invalid value for input. Only "yes" or "no" are allowed.');
+	}
 
+	return $value;
+}
+
+function get_page_link_by_slug($page_slug)
+{
+	$page = get_page_by_path($page_slug);
+	if ($page)
+	{
+		return get_page_link($page->ID);
+	}
+	else
+	{
+		return null;
+	}
+}
 
 require get_template_directory() . '/inc/custom-header.php'; 
 require get_template_directory() . '/inc/template-tags.php';

@@ -9,6 +9,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<?php if (get_theme_mod( 'header_text', true )) { ?>
 <header class="clearfix">
   <div class="wrapper">
     <div id="site-branding">
@@ -43,6 +44,7 @@
   <!-- End Wrapper --> 
   
 </header>
+<?php } ?>
 <div id="hero">
   <div class="hero-bg"><img src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" /></div>
   <?php
@@ -54,18 +56,21 @@
 	echo '<div class="hero-overlay ' . $hidden . '"></div>';
 	?>
   <div class="wrapper">
-    <h2>
+    <h1>
       <?php the_title() ?>
-    </h2>
-    <div class="postcontentmeta"> <i class="fa fa-calendar"></i>
-      <?php the_time( get_option( 'date_format' ) ); ?>
-      <i class="fa fa-comment"></i>
-      <?php comments_popup_link( esc_html__( 'Leave a comment', 'louis' ), esc_html__( '1 Comment', 'louis' ), esc_html__( '% Comments', 'louis' ) ); ?>
-      <i class="fa fa-folder-open"></i>
-      <?php the_category( ', ' ) ?>
+    </h1>
+    <div class="postcontentmeta">
+      <i class="fa fa-home"></i>
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <?php esc_html_e( 'Início', 'louis' ); ?>
+      </a>
+      <i class="fa fa-info-circle"></i>
+      <a href="<?php echo get_page_link_by_slug( 'about' ); ?>" rel="">
+        <?php esc_html_e( 'Sobre', 'louis' ); ?>
+      </a>
     </div>
     <div class="herobuttons">
-	<?php the_tags ( '', '', ''); ?>
+	    <?php the_tags ( '', '', ''); ?>
     </div>
   </div>
   <!-- End Wrapper --> 
