@@ -244,6 +244,9 @@ function get_page_link_by_slug($page_slug)
 	}
 }
 
+remove_action('wp_head', 'feed_links', 2); // remove rss feed links
+remove_action('wp_head', 'feed_links_extra', 3); // remove rss feed links
+
 require get_template_directory() . '/inc/custom-header.php'; 
 require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/themesetup.php';
