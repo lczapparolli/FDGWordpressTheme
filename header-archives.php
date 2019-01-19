@@ -56,6 +56,20 @@
       <?php the_archive_title()	?>
     </h2>
     <p class="herotext"><?php the_archive_description() ?></p>
+    <div class="postcontentmeta">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <i class="fa fa-home"></i>
+        <?php esc_html_e( 'Início', 'louis' ); ?>
+      </a>
+      <a href="<?php echo get_page_link_by_slug( 'about' ); ?>" rel="">
+        <i class="fa fa-info-circle"></i>
+        <?php esc_html_e( 'Sobre', 'louis' ); ?>
+      </a>
+      <a href="<?php echo get_page_link_by_slug( 'como-assinar-o-feed' ); ?>" rel="">
+        <i class="fa fa-rss"></i>
+        <?php esc_html_e( 'Como assinar o feed', 'louis' ); ?>
+      </a>
+    </div>
   </div>
   <!-- End Wrapper --> 
 </div>
