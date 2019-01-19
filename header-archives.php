@@ -9,38 +9,6 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header class="clearfix">
-  <div class="wrapper">
-    <div id="site-branding">
-      <?php the_custom_logo(); ?>
-      <?php if ( function_exists( 'jetpack_the_site_logo' ) && has_site_logo() ) : ?>
-      <?php jetpack_the_site_logo(); ?>
-      <?php endif; ?>
-      <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-        </a></h1>
-      <h2 class="site-description">
-        <?php bloginfo( 'description' ); ?>
-      </h2>
-    </div>
-  <nav id="primary-navigation" class="main-navigation clearfix" role="navigation">
-      <div class="col-width">
-        <div class="menu-toggle" data-toggle="#primary-navigation .primary-menu, #primary-navigation .social-menu"> </div>
-        <?php if ( has_nav_menu( 'primary' ) ):
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'container_class' => 'primary-menu-wrap',
-							'menu_class' => 'primary-menu',
-							'link_before' => '<span>',
-							'link_after' => '</span>'
-						) );
-					endif; ?>
-      </div>
-    </nav>
-  </div>
-  <!-- End Wrapper --> 
-  
-</header>
 <div id="hero">
   <div class="hero-bg"><img src="<?php header_image(); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" /></div>
   <?php
