@@ -10,9 +10,6 @@
 
       <?php the_post_thumbnail('louis-teste'); ?>
       <div id="content">
-
-
-        <h1 class="postcontenttitle"><?php the_title() ?></h1>
         <div class="authormeta"><?php esc_html_e('By:', 'louis'); ?> <?php the_author_posts_link(); ?> </div>
         <?php
         the_content();

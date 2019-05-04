@@ -9,9 +9,6 @@
     <div class="wrap-col test postcontent">
       <?php the_post_thumbnail('louis-blog-thumb'); ?>
       <div id="content">
-        <h1 class="postcontenttitle">
-          <?php the_title() ?>
-        </h1>
         <?php
         the_content();
         wp_link_pages();
