@@ -24,23 +24,6 @@
           <?php bloginfo( 'description' ); ?>
         </h2>
       </div>
-
-  <?php /* ***Comentado para remover o menu (Não há nenhum item)***
-      <nav id="primary-navigation" class="main-navigation clearfix" role="navigation">
-        <div class="col-width">
-          <div class="menu-toggle" data-toggle="#primary-navigation .primary-menu, #primary-navigation .social-menu"> </div>
-          <?php if ( has_nav_menu( 'primary' ) ):
-              wp_nav_menu( array(
-                'theme_location' => 'primary',
-                'container_class' => 'primary-menu-wrap',
-                'menu_class' => 'primary-menu',
-                'link_before' => '<span>',
-                'link_after' => '</span>'
-              ) );
-            endif; ?>
-        </div>
-      </nav>
-  */ ?>
     </div>
     <!-- End Wrapper --> 
     
