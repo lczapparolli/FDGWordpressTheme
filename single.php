@@ -16,9 +16,6 @@ get_header('inside');
       get_template_part('inc/partials/content', 'single');
     endwhile;
     ?>
-
-
-    <?php /* ***Comentado para remover o sidebar***  get_sidebar(); ?><?php the_post_navigation(); */?>
   </div>
 
   <?php get_footer();
