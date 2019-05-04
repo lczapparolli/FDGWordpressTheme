@@ -59,9 +59,6 @@
           <?php esc_html_e('Como assinar o feed', 'louis'); ?>
         </a>
       </div>
-      <div class="herobuttons">
-        <?php the_tags('', '', ''); ?>
-      </div>
     </div>
     <!-- End Wrapper -->
   </div>

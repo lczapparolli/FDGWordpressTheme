@@ -14,7 +14,13 @@
         <?php
         the_content();
         wp_link_pages();
+        ?>
 
+        <div class="herobuttons">
+          <?php the_tags('', '', ''); ?>
+        </div>
+        
+        <?php
         edit_post_link(esc_html__('Edit', 'louis'), '<span class="edit-link">', '</span>');
         ?>
         <br>

@@ -31,7 +31,7 @@ function louis_load_theme_colors()
 		echo '*::-moz-selection {background-color: ' .$hash.$accentColor. '}';
 		echo '.main-navigation ul ul a:hover {background-color: ' .$hash.$accentColor. '}';
 		//echo '.menu-item.has-sub a::before, .menu-item.has-sub a::after {background: ' .$hash . $accentColor. ' !important;}';
-		echo 'h1.site-title a,  .postcontent a:hover, .footerwidget a:hover, .authormeta a:hover, .post-edit-link:hover, #hero .button.seethrough, .sidebarwidget a:hover, .tab_cont .clear, .logged-in-as a:hover {border-color: ' . $hash . $accentColor . ' } ';
+		echo 'h1.site-title a,  .postcontent a:hover, .footerwidget a:hover, .authormeta a:hover, .post-edit-link:hover, #hero .button.seethrough, .sidebarwidget a:hover, .tab_cont .clear, .logged-in-as a:hover, .herobuttons .button.seethrough {border-color: ' . $hash . $accentColor . ' } ';
 		echo '.tab_head li:hover a {color: #fff !important;}';
 	}
 	echo '#hero .hero-overlay {background-color: '.$heroImageOverlayColor.'; opacity: '.round($heroImageOverlayOpacity / 100, 2).'}';

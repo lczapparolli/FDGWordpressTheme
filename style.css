@@ -2106,7 +2106,7 @@ embed, iframe, object {
    =============== */
    
 a.button {
-	color: #fff!important;
+	color: #fff;
 	border-bottom: 0px;
 }
 a.button:hover {
